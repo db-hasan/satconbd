@@ -7,8 +7,8 @@
         <div class="container d-flex align-items-center justify-content-between">
             <!-- Logo on the left -->
             <div class="navbar-logo-container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="{{ 'images/satellite-logo.png' }}" alt="Company Logo" class="navbar-logo">
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    <img src="{{ asset('images/satellite-logo.png') }}" alt="Company Logo" class="navbar-logo">
                 </a>
             </div>
 
@@ -122,9 +122,19 @@
                 <div class="col-lg-4">
                     <h3 style="color: #fff; font-family: 'Saira Extra Condensed', sans-serif;">Contact Us</h3>
                     <ul class="list-unstyled mt-4">
-                        <li><a href=""><i class="fas fa-phone-alt me-2"></i> +09613371444</a></li>
-                        <li><a href=""><i class="fas fa-envelope me-2"></i>
-                                info@satconbd.com</a></li>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="tel:+09613371444" class="text-decoration-none">
+                                    <i class="fas fa-phone-alt me-2"></i> +09613371444
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@satconbd.com" class="text-decoration-none">
+                                    <i class="fas fa-envelope me-2"></i> info@satconbd.com
+                                </a>
+                            </li>
+                        </ul>
+                        
                         <li class="d-flex">
                             <a href=""><i class="bi bi-geo-alt-fill me-2"></i></a>
                             <div class="">

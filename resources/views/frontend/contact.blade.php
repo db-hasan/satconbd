@@ -80,7 +80,7 @@
                             Road #1 (Jashimuddin Road)
                             Sector #3, Uttara Dhaka 1230, Bangladesh</p>
                         <small>+09613371444</small><br>
-                        <a href="">info@satconbd.com</a> <br>
+                        <a href="mailto:info@satconbd.com">info@satconbd.com</a> <br>
                         <a href="https://maps.app.goo.gl/jKDnru3pFsQiSQsY8">Driection <i class='bx bxs-direction-right'
                                 style="font-size: 15px;"></i></a>
                     </div>
@@ -88,7 +88,7 @@
                         <h2>Tongi Branch</h2>
                         <p>Avijan 45, College Road, Tongi, Gazipur, Bangladesh</p>
                         <small>+09613371444 </small><br>
-                        <a href="">contact@proinfoedu.com</a><br>
+                        <a href="mailto:info@satconbd.com">info@satconbd.com</a><br>
                         <a href="https://maps.app.goo.gl/pLyLzqLHioKhAReWA">Driection <i class='bx bxs-direction-right'
                                 style="font-size: 15px;"></i></a>
                     </div>
