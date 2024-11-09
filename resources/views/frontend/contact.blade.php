@@ -19,7 +19,21 @@
 
             <div class="row gy-4 ">
                 <div class="col-lg-6 ">
-                    <form action="" method="post" class="php-email-form">
+                    <form action="{{ route('contact.send') }}" method="POST" class="php-email-form">
+                        @csrf
+                        @method('POST')
+
+                        @if (Session::has('success'))
+                            <div class="alert alert-success">
+                                {{ Session::get('success') }}
+                            </div>
+                        @endif
+                        @if (Session::has('error'))
+                            <div class="alert alert-danger">
+                                {{ Session::get('error') }}
+                            </div>
+                        @endif
+
                         <h2 class="mb-5 text-danger">Make a Contact</h2>
                         <div class="row gy-4">
 
@@ -27,23 +41,28 @@
                                 <input type="text" name="name" class="form-control" placeholder="Your Name"
                                     required="">
                             </div>
+                            @error('name')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
 
                             <div class="col-md-6 ">
                                 <input type="number" class="form-control" name="number" placeholder="Your Number"
                                     required="">
                             </div>
+                            @error('number')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
 
                             <div class="col-12">
-                                <select class="form-select">
+                                <select class="form-select" name="type">
                                     <option selected disabled>Select</option>
-                                    <option>Home User</option>
-                                    <option>Corporate</option>
+                                    <option value="Home">Home User</option>
+                                    <option value="Corporate">Corporate</option>
                                 </select>
-
                             </div>
 
                             <div class="col-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required name="message"></textarea>
                             </div>
 
                             <div class="col-12 text-center">

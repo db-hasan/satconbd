@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ Route::get('/media', [FrontendController::class, 'media'])->name('media');
 Route::get('/corporate', [FrontendController::class, 'corporate'])->name('corporate');
 
 
+Route::post('/contact-send', [ContactController::class, 'contactsend'])->name('contact.send');
 
 
 Route::get('/admin-login', [AuthController::class, 'login'])->name('login');
