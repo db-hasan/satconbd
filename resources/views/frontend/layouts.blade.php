@@ -96,42 +96,50 @@
                     <div class="footer-img">
                         <img src="{{ asset('images/satellite-logo.png') }}" alt="Company Logo" class="img-fluid">
                     </div>
-                    <p>Satellite Connection Online & Network System’s Broadband Internet Connection Is Available To All
-                        Dhaka City.</p>
+                    <p class="me-4" style="text-align: justify;">Satellite Connection Broadband is now available to all corners of the Dhaka Division, providing high-speed internet access even in remote and underserved areas, ensuring reliable connectivity for businesses, homes, and educational institutions across the region.</p>
                 </div>
                 <div class="col-sm-6 col-lg-2">
                     <h3 style="color: #fff; font-family: 'Saira Extra Condensed', sans-serif;">Quick Links
                         <ul class="list-unstyled mt-4">
-                            <li><a href="index.html">Home</a></li>
-
-                            <li><a href="services.html">Our Service</a></li>
-                            <li><a href="packages.html">Our Packages</a></li>
-                            <li><a href="about.html">About us</a></li>
+                            <li><a href="{{route('about')}}">About us</a></li>
+                            <li><a href="{{route('contact')}}">Contact us</a></li>
+                            <li><a href="{{route('service')}}">Our Service</a></li>
+                            <li><a href="{{route('package')}}">Our Packages</a></li>
+                            <li><a href="{{route('corporate')}}">Corporate Service</a></li>
+                            
                         </ul>
                     </h3>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-6 col-lg-2">
                     <h3 style="color: #fff; font-family: 'Saira Extra Condensed', sans-serif;">Useful Links</h3>
                     <ul class="list-unstyled mt-4">
-                        <li><a href="media.html">FTP Server</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="{{route('corporate')}}">FTP Server</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Cookie Settings</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <h3 style="color: #fff; font-family: 'Saira Extra Condensed', sans-serif;">Contact Us</h3>
                     <ul class="list-unstyled mt-4">
-                        <li><a href=""><i class="fas fa-phone-alt me-2"></i> 09613371444</a></li>
+                        <li><a href=""><i class="fas fa-phone-alt me-2"></i> +09613371444</a></li>
                         <li><a href=""><i class="fas fa-envelope me-2"></i>
                                 info@satconbd.com</a></li>
-                        <li><a href="">
-                                <span>
-                                    House #52 (7th Floor) <br>
-                                    <span>Road #1 (Jashimuddin Road)</span>
-                                    <span>Sector #3, Uttara,
-                                        Dhaka 1230, Bangladesh</span>
-
-                                </span>
-                            </a></li>
+                        <li class="d-flex">
+                            <a href=""><i class="bi bi-geo-alt-fill me-2"></i></a>
+                            <div class="">
+                                <a href="https://maps.app.goo.gl/jKDnru3pFsQiSQsY8">House #52 (7th Floor)
+                                    Road #1 (Jashimuddin Road)
+                                    Sector #3, Uttara Dhaka 1230, Bangladesh</a>
+                                    
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <a href=""><i class="bi bi-geo-alt-fill me-2"></i></a>
+                            <div class="">
+                                <a href="https://maps.app.goo.gl/jKDnru3pFsQiSQsY8">Avijan 45, College Road, Tongi, Gazipur, Bangladesh</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

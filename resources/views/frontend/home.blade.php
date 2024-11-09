@@ -275,10 +275,10 @@
                     <div class="row gy-4">
 
                         <div class="col-lg-4 fade-element fade-left">
-                            <div class="pricing-item bg-info-subtle">
+                            <div class="pricing-item text-light" style="background-color: #000">
                                 <h3>Corporate Service</h3>
                                 <h4><sup>Price Customizing.</sup></h4>
-                                <ul>
+                                <ul class="text-light">
                                     <li><i class="bi bi-check"></i> <span><strong>Dedicated ip address</strong></span>
                                     </li>
                                     <li><i class="bi bi-check"></i> <span>IP line service</span></li>
