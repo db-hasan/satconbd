@@ -25,7 +25,7 @@ class ContactMail extends Mailable
 
     public function build()
     {
-        return $this->subject('New message form satconbd')
+        return $this->subject('New message from satconbd')
                     ->view('mail.mailsend');
     }
 
