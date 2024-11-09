@@ -285,7 +285,7 @@
                                     <li><i class="bi bi-check"></i> <span>Web Application Firewall (WAF)</span></li>
                                     <li><i class="bi bi-check"></i> <span>Unlimited Mbps BDIX Bandwidth</span></li>
                                 </ul>
-                                <a href="#" class="buy-btn">Contact Us</a>
+                                <a href="{{route('corporate')}}" class="buy-btn">View More</a>
 
                             </div>
                         </div><!-- End Pricing Item -->
@@ -301,7 +301,7 @@
                                     <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span>
                                     </li>
                                 </ul>
-                                <a href="#" class="buy-btn">Contact Us</a>
+                                <a href="https://wa.me/+8809613371444" target="_blank" class="buy-btn">Contact Us</a>
 
                             </div>
                         </div><!-- End Pricing Item -->
@@ -318,7 +318,7 @@
                                     <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span>
                                     </li>
                                 </ul>
-                                <a href="#" class="buy-btn">Contact Us</a>
+                                <a href="https://wa.me/+8809613371444" target="_blank" class="buy-btn">Contact Us</a>
 
                             </div>
                         </div><!-- End Pricing Item -->
@@ -335,7 +335,7 @@
                                     <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span>
                                     </li>
                                 </ul>
-                                <a href="#" class="buy-btn">Contact Us</a>
+                                <a href="https://wa.me/+8809613371444" target="_blank" class="buy-btn">Contact Us</a>
                             </div>
                         </div><!-- End Pricing Item -->
                         <div class="col-lg-4 fade-element fade-down">
@@ -350,7 +350,7 @@
                                     <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span>
                                     </li>
                                 </ul>
-                                <a href="#" class="buy-btn">Contact Us</a>
+                                <a href="https://wa.me/+8809613371444" target="_blank" class="buy-btn">Contact Us</a>
                             </div>
                         </div><!-- End Pricing Item -->
                         <div class="col-lg-4 fade-element fade-right">
@@ -365,7 +365,7 @@
                                     <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span>
                                     </li>
                                 </ul>
-                                <a href="#" class="buy-btn">Contact Us</a>
+                                <a href="https://wa.me/+8809613371444" target="_blank" class="buy-btn">Contact Us</a>
                             </div>
                         </div><!-- End Pricing Item -->
 
@@ -391,37 +391,16 @@
                 <div class="col-12">
                     <div class="image-slider position-relative">
                         <div class="slider-container d-flex">
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
-                            <div class="image-box">
-                                <img src="{{ asset('images/apnic.png') }}" alt="BDCOM.png">
-                            </div>
+                            @for ($i = 1; $i <= 7; $i++)
+                                <div class="image-box">
+                                    <img src="{{ asset("images/client/client ($i).jpg") }}" alt="Client Image {{ $i }}">
+                                </div>
+                            @endfor
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 
