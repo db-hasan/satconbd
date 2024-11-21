@@ -20,7 +20,7 @@ class ContactController extends Controller
 
         try {
             // Send email
-            Mail::to('ahasan.jobs@gmail.com')->send(new ContactMail($request->all()));
+            Mail::to('info@satconbd.net')->send(new ContactMail($request->all()));
 
             return redirect()->back()->with('success', 'Message sent successfully.');
         } catch (\Exception $e) {
